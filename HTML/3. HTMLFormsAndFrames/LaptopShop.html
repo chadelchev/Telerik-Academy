@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>HTML Form - Task 2</title>
+		<meta charset="UTF-8">
+		
+		<style>
+			table
+			{
+				border: 1px solid black;
+				cell-spacing:0px;
+				border-collapse:collapse;
+				font-family:"Comic Sans MS", sans-serif;
+				font-size:16px;
+			}
+			table table
+			{
+				width:100%;
+			}
+			tr, td
+			{
+				padding:5px;
+			}
+			#nav
+			{
+				padding:5px;
+				text-align: center;
+				cell-spacing:0px;
+			}
+			#firstrow
+			{
+				border-bottom: 1px solid black;
+				color: #00AFEF;
+				font-size:18px;
+				font-family: sans-serif;
+			}
+			#cellWithTable
+			{
+				width:400px;
+			}
+			#cellWithFilters
+			{
+				width:200px;
+			}
+			.inline
+			{
+				float: left;
+			}
+			th span
+			{
+				text-decoration: underline;
+			}
+			fieldset
+			{
+				text-align: center;
+			}
+			.container
+			{
+				width:250px;
+				background-color:#FFA500;
+			}
+			.pic
+			{
+				width:125px;
+				height: 120px;
+				float: left;
+			}
+			.imgsize
+			{
+				width:125px;
+				height:100px;
+			}
+			.divtext
+			{
+				padding: 0 0 20px 0;
+				
+			}
+			.spec
+			{
+				width:125px;
+				float: left;
+				padding: 19px 0 0 0;
+			}
+		</style>
+		<script>
+		 function changeValue(type)
+		 {
+			var newValue = document.getElementById(type).value;
+			var divId = document.getElementById(type+"Number");
+			divId.innerText = newValue;
+		 }
+		</script>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr id="firstrow">
+					<th id="nav" colspan="2">
+						<span>Apple</span>
+						<span>Sony</span>
+						<span>Samsung</span>
+						<span>Dell</span>
+						<span>Acer</span>	
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="cellWithTable">
+						<table>
+							<tr>
+								<td>
+									<fieldset>
+										<legend>Apple pro1</legend>
+										<div class="container">
+											<div class="pic">
+												<img src="img/mac.jpg" class="imgsize"/>
+												<div class="divtext">1300 USD</div>
+											</div>
+											<div class="spec">
+												<div class="divtext">64 GB SSD</div>
+												<div class="divtext">2 GB DDR</div>
+												<div>Intel Core i5</div>
+											</div>											
+										</div>
+									</fieldset>
+								</td>
+								<td>
+									<fieldset>
+										<legend>MacBook</legend>
+										<div class="container">
+											<div class="pic">
+												<img src="img/mac.jpg" class="imgsize"/>
+												<div class="divtext">1300 USD</div>
+											</div>
+											<div class="spec">
+												<div class="divtext">64 GB SSD</div>
+												<div class="divtext">2 GB DDR</div>
+												<div>Intel Core i5</div>
+											</div>											
+										</div>
+									</fieldset>
+								</td>	
+							</tr>
+
+							<tr>
+								<td>
+									<fieldset>
+										<legend>ProBook</legend>
+										<div class="container">
+											<div class="pic">
+												<img src="img/mac.jpg" class="imgsize"/>
+												<div class="divtext">1300 USD</div>
+											</div>
+											<div class="spec">
+												<div class="divtext">64 GB SSD</div>
+												<div class="divtext">2 GB DDR</div>
+												<div>Intel Core i5</div>
+											</div>											
+										</div>
+									</fieldset>
+								</td>
+								<td>	
+									<fieldset>
+										<legend>Apple air</legend>
+										<div class="container">
+											<div class="pic">
+												<img src="img/mac.jpg" class="imgsize"/>
+												<div class="divtext">1300 USD</div>
+											</div>
+											<div class="spec">
+												<div class="divtext">64 GB SSD</div>
+												<div class="divtext">2 GB DDR</div>
+												<div>Intel Core i5</div>
+											</div>											
+										</div>
+									</fieldset>
+								</td>	
+							</tr>
+							
+							<tr>
+								<td>
+									<fieldset>
+										<legend>Air pro</legend>
+										<div class="container">
+											<div class="pic">
+												<img src="img/mac.jpg" class="imgsize"/>
+												<div class="divtext">1300 USD</div>
+											</div>
+											<div class="spec">
+												<div class="divtext">64 GB SSD</div>
+												<div class="divtext">2 GB DDR</div>
+												<div>Intel Core i5</div>
+											</div>											
+										</div>
+									</fieldset>
+								</td>
+								<td>								
+									<fieldset>
+										<legend>Mac mega pro</legend>
+										<div class="container">
+											<div class="pic">
+												<img src="img/mac.jpg" class="imgsize"/>
+												<div class="divtext">1300 USD</div>
+											</div>
+											<div class="spec">
+												<div class="divtext">64 GB SSD</div>
+												<div class="divtext">2 GB DDR</div>
+												<div>Intel Core i5</div>
+											</div>											
+										</div>
+									</fieldset>
+								</td>					
+							</tr>									
+						</table>
+					</td>
+					
+					<td id="cellWithFilters">
+						<div class="divtext">
+							<span>Min price: </span>
+							<span id="minPriceNumber">500</span>
+							<span>USD</span>
+						</div>
+						<div class="divtext"><input id="minPrice" type="range" min="0" max="10000" value="500" onchange="changeValue('minPrice')"/></div>
+						<div class="divtext">
+							<span>Max price: </span>
+							<span id="maxPriceNumber">1500</span>
+							<span>USD</span>
+						</div>
+						<div class="divtext"><input id="maxPrice" type="range" min="250" max="10000" value="1500" onchange="changeValue('maxPrice')"/></div>
+						<div class="divtext">
+							<span>Min RAM: </span>
+							<span id="minRAMNumber">4</span>
+							<span>GB</span>
+						</div>
+						<div class="divtext"><input id="minRAM" type="range" min="0" max="24" value="4" onchange="changeValue('minRAM')"/></div>
+						<div class="divtext">
+							<span>Max RAM: </span>
+							<span id="maxRAMNumber">16</span>
+							<span>GB</span>
+						</div>						
+						<div class="divtext"><input id="maxRAM" type="range" min="0" max="24" value="16" onchange="changeValue('maxRAM')"/></div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
+
+
+

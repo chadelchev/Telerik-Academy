@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>HTML Form - Task 2</title>
+		<meta charset="UTF-8">
+		
+		<style>
+			table
+			{
+				border:0px;
+				border-spacing: 0px;
+				padding:5px;
+				font-family: sans-serif;
+				text-align: left;
+				font-weight:normal;
+			}
+			
+			th
+			{
+				border:1px solid #A9B0B6;
+
+				padding:7px;
+				font-weight:normal;
+			}
+			
+			td
+			{
+				border:1px solid #D4DAE7;
+
+				padding:7px;
+			}
+
+			thead
+			{
+				background: #DFE3E8;
+			}
+			
+			.cellBackground 
+			{
+				background-color : #FFFFFF;
+				background-image : url(img/background.jpg);
+				background-position : top;
+				background-repeat : repeat-x;
+			}
+			#firstrow
+			{
+				border-radius: 12px 12px 0 0;
+			}
+			
+			#lastrow
+			{
+				border-radius: 0 0 12px 12px;
+			}
+			.footerformat
+			{
+				letter-spacing:7px
+			}
+			.somepadding
+			{
+				padding: 0 60px 0 0;
+			}
+			#one
+			{
+				border: 1px solid red;
+				border-radius: 5px 5px 5px 5px;
+				padding: 7px 0 7px 7px;
+			}
+		</style>
+		
+		<script language="JavaScript">
+			function toggle(source) 
+			{
+				checkboxes = document.getElementsByName('box');
+				for(var i in checkboxes)
+					checkboxes[i].checked = source.checked;
+			}
+		</script>
+		
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th id="firstrow" colspan="6">Drag a column and drop it here to group by that column</th>
+				</tr>
+				
+				<tr>
+					<th>ProductID</th>
+					<th>Product name</th>
+					<th>Unit price</th>
+					<th>Quantity per unit</th>
+					<th>Units in stock</th>
+					<th>Discontinued</th>
+				</tr>
+				
+				<tr>
+					<th><input type="text" size="4"></th>
+					<th class="somepadding"><input type="text" size="25"></th>
+					<th class="somepadding">
+						<input type="text" size="15">
+						<input 	src="img/filter.jpg" 
+								name="filter" 
+								width="25" 
+								height="25" 
+								alt="filter.jpg" 
+								type="image" 
+								align="top"
+								style="cursor:pointer;">
+					</th>
+					<th class="somepadding"><input type="text" size="15"></th>
+					<th class="somepadding">
+						<input type="text" size="15">
+						<input 	src="img/filter.jpg" 
+								name="filter" 
+								width="25" 
+								height="25" 
+								alt="filter.jpg" 
+								type="image" 
+								align="top"
+								style="cursor:pointer;">
+					</th>
+					<th>
+						<input type="checkbox" onClick="toggle(this)">
+						<input 	src="img/filter.jpg" 
+								name="filter" 
+								width="25" 
+								height="25" 
+								alt="filter.jpg" 
+								type="image" 
+								align="top"
+								style="cursor:pointer;">
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Milka natural</td>
+					<td>$1.2</td>
+					<td>100 pices</td>
+					<td>40</td>
+					<td><input type="checkbox" name="box" value="check"></td>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td>Milka natural</td>
+					<td>$1.2</td>
+					<td>100 pices</td>
+					<td>40</td>
+					<td><input type="checkbox" name="box" value="check"></td>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td>Milka natural</td>
+					<td>$1.2</td>
+					<td>100 pices</td>
+					<td>40</td>
+					<td><input type="checkbox" name="box" value="check"></td>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td>Milka natural</td>
+					<td>$1.2</td>
+					<td>100 pices</td>
+					<td>40</td>
+					<td><input type="checkbox" name="box" value="check"></td>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td>Milka natural</td>
+					<td>$1.2</td>
+					<td>100 pices</td>
+					<td>40</td>
+					<td><input type="checkbox" name="box" value="check"></td>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td>Milka natural</td>
+					<td>$1.2</td>
+					<td>100 pices</td>
+					<td>40</td>
+					<td><input type="checkbox" name="box" value="check"></td>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td>Milka natural</td>
+					<td>$1.2</td>
+					<td>100 pices</td>
+					<td>40</td>
+					<td><input type="checkbox" name="box" value="check"></td>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td>Milka natural</td>
+					<td>$1.2</td>
+					<td>100 pices</td>
+					<td>40</td>
+					<td><input type="checkbox" name="box" value="check"></td>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td>Milka natural</td>
+					<td>$1.2</td>
+					<td>100 pices</td>
+					<td>40</td>
+					<td><input type="checkbox" name="box" value="check"></td>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td>Milka natural</td>
+					<td>$1.2</td>
+					<td>100 pices</td>
+					<td>40</td>
+					<td><input type="checkbox" name="box" value="check"></td>
+				</tr>
+			</tody>
+			<tfoot>
+				<tr class="cellBackground">
+					<td id="lastrow" colspan="6">
+						<span class="footerformat">
+							<input 	src="img/back10.jpg" 
+									name="filter" 
+									width="25" 
+									height="25" 
+									alt="filter.jpg" 
+									type="image" 
+									align="top"
+									style="cursor:pointer;">
+							<input 	src="img/back.jpg" 
+									name="filter" 
+									width="25" 
+									height="25" 
+									alt="filter.jpg" 
+									type="image" 
+									align="top"
+									style="cursor:pointer;">
+						</span>
+						<span class="footerformat">
+									<span id="one">1</span> 2 3 4 5 6 7 8 9 
+						</span>			
+									10 ... 
+						<span class="footerformat">			
+							<input 	src="img/forward10.jpg" 
+									name="filter" 
+									width="25" 
+									height="25" 
+									alt="filter.jpg" 
+									type="image" 
+									align="top"
+									style="cursor:pointer;">
+							<input 	src="img/forward.jpg" 
+									name="filter" 
+									width="25" 
+									height="25" 
+									alt="filter.jpg" 
+									type="image" 
+									align="top"
+									style="cursor:pointer;">
+						</span>
+						<span>
+							Page size: 
+							<select name="pagesize">
+								<option value="10">10</option>
+								<option value="20">20</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+							</select>
+						</span>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>

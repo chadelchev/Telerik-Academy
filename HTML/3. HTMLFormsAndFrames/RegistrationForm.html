@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>HTML Form - Task 1</title>
+		<meta charset="UTF-8">
+		
+		<style>
+			fieldset
+			{
+				width:500px;
+				height:520px;
+				border: 0px;
+			}
+			table, td
+			{
+				border: 1px solid black;
+				padding: 0px;
+				border-collapse:collapse;
+			}
+			table tr td:first-child
+			{
+				padding: 5px;
+				font-weight:bold;
+				font-family:sans-serif;
+				width:200px;
+				text-align:right;
+			}
+			#buttons
+			{
+				text-align:center;
+				background:lightblue;
+			}
+			#state
+			{
+				padding: 5px;
+				font-weight:bold;
+				font-family:sans-serif;				
+			}
+			#phonecell
+			{
+				white-space:nowrap;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<fieldset name="Registy Form">
+				<table>
+					<tr>
+						<td>Last Name</td>
+						<td colspan="3"><input type="text" name="lastname" size="40"></td>
+					</tr>
+					<tr>
+						<td>First Name</td>
+						<td colspan="3"><input type="text" name="firstname" size="40"></td>
+					</tr>
+					<tr>
+						<td>Address</td>
+						<td colspan="3"><textarea cols="30" rows="3" ></textarea></td>
+					</tr>
+					<tr>
+						<td>City</td>
+						<td><input type="text" name="city"></td>
+						<td id="state">State</td>
+						<td><input type="text" name="state" size="5"></td>
+					</tr>
+					<tr>
+						<td>Zip/Postal Code</td>
+						<td colspan="3"><input type="text" name="zipcode" size="6"></td>
+					</tr>
+					<tr>
+						<td>Country</td>
+						<td colspan="3">
+							<select name="country">
+								<option value="Bulgaria">Bulgaria</option>
+								<option value="Serbia">Serbia</option>
+								<option value="Germany">Germany</option>
+								<option value="China">China</option>
+							</select>
+						</td>					
+					</tr>
+					<tr>
+						<td>Phone (country code, area code, number)</td>
+						<td colspan="3" id="phonecell">
+							( + <input type="text" name="code1" size="4"> )
+								<input type="text" name="code2" size="4"> -
+								<input type="text" name="number">
+						</td>
+					</tr>
+					<tr>
+						<td>E-mail</td>
+						<td colspan="3"><input type="email" name="mail"></td>
+					</tr>
+					<tr>
+						<td>Birth date</td>
+						<td colspan="3">
+							<label for="month">Month</label>
+							<input type="month" name="month" id="month" size="2">
+							<label for="day">Day</label>
+							<input type="text" name="day" id="day" size="2">
+							<label for="year">Year</label>
+							<input type="text" name="year" id="year" size="4 ">
+						</td>
+					</tr>
+					<tr>
+						<td>Gender</td>
+						<td colspan="3">
+							<select name="sex">
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Starting date</td>
+						<td colspan="3">
+							<input type="radio" name="2006" id="spring2006">
+							<label for="spring2006">Spring 2006</label>
+							<input type="radio" name="2006" id="summer2006">
+							<label for="summer2006">Summer 2006</label>
+						</td>
+					</tr>
+					<tr>
+						<td>Comments/Questions</td>
+						<td colspan="3"><textarea cols="30" rows="4" ></textarea></td>
+					</tr>
+					<tr>
+						<td colspan="4" id="buttons">
+							<input type="submit" name="submit" value="Submit" />
+							<input type="reset" value="Clear This Form" />
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+table, th, td
+{
+	border:1px solid grey;
+	border-spacing:1px;
+	font-size:x-large;
+}
+td
+{
+	width:45px;
+	text-align:center;
+}
+.center
+{
+	text-align:center;
+}
+.alignR
+{
+	text-align:right;
+}
+.alignL
+{
+	text-align:left;
+}
+.alignRB
+{
+	vertical-align:bottom;
+	text-align:right;
+}

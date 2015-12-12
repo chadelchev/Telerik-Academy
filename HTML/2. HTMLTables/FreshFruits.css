@@ -1,0 +1,12 @@
+table
+{	
+	border:1px;
+	width:25%;
+}
+th
+{
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	font-style:italic;
+	font-size:x-large;
+}
